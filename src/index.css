@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "./Animation/animate.css";
+@import "./css/melodrama.css";
+@import "./css/comico.css";
+@import "./css/tanker.css";
+@import "./css/trap.css";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  outline-offset: 4px;
+}
+
+::selection {
+  background: #dce6d9;
+  color: #25252b;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media (max-width: 896px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* @media/ */

@@ -1,0 +1,118 @@
+.hand {
+  animation: hand 3.5s linear infinite;
+}
+
+@keyframes hand {
+  0%,
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+
+  25% {
+    transform: rotate(-4deg) translateX(-.6rem);
+  }
+
+  75% {
+    transform: rotate(4deg) translateX(.6rem);
+  }
+}
+
+.scroll-hero {
+  animation: scrollHero 4s ease-in-out infinite;
+}
+
+@keyframes scrollHero {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(80px);
+  }
+}
+
+.character .icons .box-icon:nth-child(1) .icon {
+  animation: boxIcon 2s 0.3s alternate infinite;
+}
+
+.character .icons .box-icon:nth-child(2) .icon {
+  animation: boxIcon2 2.75s alternate infinite;
+}
+
+.character .icons .box-icon:nth-child(3) .icon {
+  animation: boxIcon 3.5s 0.2s alternate infinite;
+}
+
+.character .icons .box-icon:nth-child(4) .icon {
+  animation: boxIcon 4.5s 0.1s alternate infinite;
+}
+
+.character .icons .box-icon:nth-child(5) .icon {
+  animation: boxIcon 4.5s 0.5s alternate infinite;
+}
+
+@keyframes boxIcon {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes boxIcon2 {
+  0% {
+    transform: translateY(0px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(-40px) rotate(-90deg);
+  }
+}
+
+.parent-cursor-frame {
+  animation: transtion 25s 4s alternate infinite;
+}
+
+@keyframes transtion {
+  0% {
+    transform: translate(0px) rotate(0);
+  }
+
+  20% {
+    transform: translate(-10vw, -13vh);
+  }
+
+  40% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(-25vw, -7.5vh);
+  }
+
+  80% {
+    transform: translate(-16vw, -15vh);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 670px) {
+  .scroll-text {
+    animation: scrolltext 3s alternate infinite;
+  }
+}
+
+@keyframes scrolltext {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}

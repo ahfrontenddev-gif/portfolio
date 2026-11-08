@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "trap";
+  src: url("../../public/font/Sunday.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
