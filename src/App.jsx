@@ -42,7 +42,7 @@ function App() {
   });
 
   return (
-    <main className="relative min-h-dvh w-dvw bg-black">
+    <main className="relative bg-black">
       <Nav />
       <Container />
       <CircleProgress />

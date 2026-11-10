@@ -5,7 +5,7 @@ const Character = () => {
     <div className="character absolute bottom-0 left-1/2 -translate-x-1/2">
       <div className="conti relative flex items-center justify-center flex-col">
         <div className="head z-[51] relative">
-          <div className="img origin-bottom-left sm:w-[15vw] w-[31.3vw]">
+          <div className="img origin-bottom-left sm:w-[15vw] w-[40vw]">
             <img
               className="w-full translate-y-1 relative"
               src="/images/character/سر.png"
@@ -36,10 +36,10 @@ const Character = () => {
             </div>
           </div>
         </div>
-        <div className="body z-[48] sm:w-[38vw] w-[80vw]">
+        <div className="body z-[48] sm:w-[38vw] w-[100vw]">
           <img className="w-full" src="/images/character/بدن.png" alt="" />
         </div>
-        <div className="hand z-[49] absolute sm:bottom-[8.1vw] bottom-[17vw] sm:left-[1.5vw] left-[4vw] sm:w-[8vw] w-[14vw]">
+        <div className="hand z-[49] absolute sm:bottom-[8.1vw] bottom-[17vw] sm:left-[1.5vw] left-[4vw] sm:w-[8vw] w-[19vw]">
           <img className="w-full" src="/images/character/دست.png" alt="" />
         </div>
       </div>

@@ -22,30 +22,15 @@ const Footer = () => {
             <h6 className="text-[#482e88] font-[Melodrama] font-bold text-[2rem] max-md:text-[3rem]">
               Tools
             </h6>
-            <ul className="mt-[1rem] font-[Melodrama] text-[#6148a1] text-[1.6rem] md:text-[2.1rem]">
+            <ul className="mt-[1rem] font-[Melodrama] font-bold text-[#6148a1] text-[1.9rem] md:text-[2.1rem]">
               <li className="flex items-center gap-[1rem]">
                 React
-                <img
-                  className="w-[1.7rem]"
-                  src="/images/icon/dright.png"
-                  alt=""
-                />
               </li>
               <li className="flex items-center gap-[1rem]">
                 Gsap
-                <img
-                  className="w-[1.7rem]"
-                  src="/images/icon/dright.png"
-                  alt=""
-                />
               </li>
               <li className="flex items-center gap-[1rem]">
                 Tailwind
-                <img
-                  className="w-[1.7rem]"
-                  src="/images/icon/dright.png"
-                  alt=""
-                />
               </li>
             </ul>
           </div>

@@ -107,7 +107,8 @@ const Container = () => {
     () => {
       const works = document.querySelector(".works");
 
-      const scrollWorks = works.scrollWidth - works.clientWidth + works.clientWidth /10
+      const scrollWorks =
+        works.scrollWidth - works.clientWidth + works.clientWidth / 10;
 
       const split = SplitText.create(".what .para", {
         type: "chars, words",
@@ -293,8 +294,8 @@ const Container = () => {
           "<+.4",
         )
         .to(".tree-one", { x: "-100" }, "<")
-        .to(".tree-two", { x: "-300" }, "<")
-        .to(".tree-three", { x: "-400" }, "<")
+        .to(".tree-two", { x: "-100", delay: 0.075 }, "<")
+        .to(".tree-three", { x: "-100", delay: 0.15 }, "<")
         .to(".tree", {
           y: "-100",
           delay: 0.2,
@@ -509,14 +510,16 @@ const Container = () => {
           },
           ">",
         )
-        .set(
-          ".what",
-          {
-            display: "none",
-          },
-        )
+        .set(".what", {
+          display: "none",
+        })
 
         // Works
+        .set(".works .desc .title", {
+          y: 100,
+          opacity: 0,
+          scale: 0.9,
+        })
         .set(containerRef.current, {
           backgroundColor: "#56683E",
         })
@@ -535,19 +538,11 @@ const Container = () => {
           },
           "<",
         )
-        .fromTo(
-          ".works .desc .title",
-          {
-            y: 100,
-            opacity: 0,
-            scale: 0.9,
-          },
-          {
-            y: 0,
-            opacity: 1,
-            scale: 1,
-          },
-        )
+        .to(".works .desc .title", {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+        })
         .fromTo(
           splitWork.chars,
           {
@@ -584,11 +579,11 @@ const Container = () => {
           x: -scrollWorks,
           duration: 3,
         })
-
         // Footer
         .set("footer", {
           opacity: 1,
           zIndex: 100,
+          duration: 0,
         })
         .to("footer", {
           top: "-100%",
@@ -690,7 +685,7 @@ const Container = () => {
   );
 
   return (
-    <section ref={heroRef} className="relative z-10 h-dvh w-full">
+    <section ref={heroRef} className="relative z-10 h-lvh w-full">
       <div className="cont flex h-full w-full items-center justify-center overflow-hidden">
         <div
           ref={containerRef}

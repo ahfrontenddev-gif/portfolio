@@ -20,11 +20,11 @@ const Nav = () => {
         <a
           href="/cv.pdf"
           download="Amirhossein-Abbaszadeh-CV.pdf"
-          className="flex items-center gap-[.5rem] text-[1.7rem] rounded-[5rem] border border-[snow] text-[snow]/90 pl-[1.4rem] pr-[1.4rem] p-[.3rem]"
+          className="flex items-center gap-[.5rem] shadow-lg text-shadow-lg text-[1.7rem] rounded-[5rem] border border-[snow] text-[snow]/90 pl-[1.4rem] pr-[1.4rem] p-[.3rem]"
         >
           Download CV
         </a>
-        <div className="flex items-center gap-[.5rem] rounded-[5rem] border border-[snow] text-[snow]/90 pl-[1.4rem] pr-[1.4rem] p-[.3rem]">
+        <div className="flex items-center gap-[.5rem] shadow-lg text-shadow-lg rounded-[5rem] border border-[snow] text-[snow]/90 pl-[1.4rem] pr-[1.4rem] p-[.3rem]">
           <span className="w-[.7rem] aspect-square rounded-full bg-green-400"></span>
           <p className="text-[1.7rem]">Open to roles and freelance</p>
         </div>
